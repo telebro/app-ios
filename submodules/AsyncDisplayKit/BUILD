@@ -15,6 +15,7 @@ objc_library(
         "Source/**/*.mm",
     ], allow_empty=True) + private_headers,
     copts = [
+        "-Wno-vla-extension",
         "-Werror",
     ],
     cxxopts = [

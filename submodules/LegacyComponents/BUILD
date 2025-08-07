@@ -29,6 +29,7 @@ objc_library(
         "PublicHeaders/**/*.h",
     ]),
     copts = [
+        "-Wno-vla-extension",
         "-Werror",
     ],
     includes = [
